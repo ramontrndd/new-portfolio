@@ -91,3 +91,22 @@ a {
     width: 8em;
   }
 }
+
+
+@media screen and (min-width: 360px)and (max-width: 768px){
+  .home-content{
+    flex-direction: column-reverse;
+  }
+  .home-photo{
+    width: 75vw;
+    height: 45vh;
+  }
+  .home-download-cv{
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .home-text {
+    width: 70vw;
+  }
+}
