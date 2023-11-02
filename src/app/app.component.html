@@ -1,4 +1,4 @@
-<mat-toolbar> 
+<mat-toolbar>
   <h1>< Ramon Trindade /></h1>
   <button
     mat-icon-button
@@ -8,7 +8,6 @@
     <mat-icon class="menu-color" *ngIf="!sidenav.opened">menu</mat-icon>
     <mat-icon class="menu-color" *ngIf="sidenav.opened">close</mat-icon>
   </button>
- 
 </mat-toolbar>
 
 <mat-sidenav-container>
@@ -25,29 +24,30 @@
 
     <mat-divider></mat-divider>
 
-    <button mat-button class="menu-button">
+    <button mat-button class="menu-button" routerLink="/home">
       <mat-icon>home</mat-icon>
       <span>Inicio</span>
     </button>
-    <button mat-button class="menu-button">
+    <button mat-button class="menu-button" routerLink="/projetos">
       <mat-icon>construction</mat-icon>
       <span>Projetos</span>
     </button>
-    <button mat-button class="menu-button">
+    <button mat-button class="menu-button" routerLink="/tech-skills">
       <mat-icon>dataset_linked</mat-icon>
       <span>Tech Skills</span>
     </button>
-    <button mat-button class="menu-button">
+    <button mat-button class="menu-button"routerLink="/contact">
       <mat-icon>person</mat-icon>
       <span>Contato</span>
     </button>
     <mat-divider></mat-divider>
-    <button mat-button class="menu-button">
+    <button mat-button class="menu-button"routerLink="/about-me">
       <mat-icon>info</mat-icon>
       <span>Sobre mim</span>
     </button>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div class="content mat-elevation-z4">Main Content</div>
+    <div class="content mat-elevation-z4"><router-outlet></router-outlet></div>
+    
   </mat-sidenav-content>
 </mat-sidenav-container>
