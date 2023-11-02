@@ -1,0 +1,93 @@
+.content {
+  background-color: #0f1216;
+  height: calc(100vh - 98px);
+  margin: 16px;
+  margin-left: 30px;
+  white-space: pre-line;
+  font-size: 2rem;
+  color: lightgray;
+  border-radius: 10px;
+}
+.home-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.home-content {
+  margin-top: 15px;
+}
+.home-text {
+  width: 60%;
+  font-family: "Ubuntu", sans-serif;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.home-text p {
+  margin-top: 10px;
+}
+.home-text h2 {
+  width: 195px;
+  border-right: 2px solid rgba(255, 255, 255, 0.726);
+  white-space: nowrap;
+  overflow: hidden;
+  color: #00b759;
+  margin-top: 35px;
+}
+.home-photo {
+  display: flex;
+  border-radius: 50%;
+}
+.content,
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.typing-cursor {
+  animation: blinkCursor 500ms infinite normal, typing 3s steps(50) 1s normal;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.home-download-cv {
+  text-align: center;
+  width: 200px;
+  margin-top: 15px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  border-radius: 1rem;
+  margin-left: 30px;
+  background: linear-gradient(
+      90deg,
+      rgba(166, 247, 80, 0.04) 0%,
+      rgba(166, 247, 80, 0) 69.95%
+    ),
+    rgb(24, 28, 35);
+  padding: 1rem;
+  border: 1px solid #00b759;
+}
+.home-download-cv:hover {
+  background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166))
+    border-box border-box;
+  transition: opacity 3s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right: 2px solid rgba(255, 255, 255, 0.726);
+  }
+  to {
+    border-right: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8em;
+  }
+}
