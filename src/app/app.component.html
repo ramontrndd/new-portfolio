@@ -1,15 +1,29 @@
-<mat-toolbar>
+<mat-toolbar> 
   <h1>< Ramon Trindade /></h1>
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+    <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+  </button>
+ 
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav mode="side" opened>
-
-    <img src="../assets/profile.jpg" alt="profile foto" class="avatar mat-elevation-z8" width="150px" height="160px">
+  <mat-sidenav #sidenav="matSidenav">
+    <img
+      src="../assets/profile.jpg"
+      alt="profile foto"
+      class="avatar mat-elevation-z8"
+      width="150px"
+      height="160px"
+    />
     <h4 class="name">Ramon Trindade</h4>
     <p class="designation">Desenvolvedor Front-End</p>
 
-    <mat-divider></mat-divider> 
+    <mat-divider></mat-divider>
 
     <button mat-button class="menu-button">
       <mat-icon>home</mat-icon>
