@@ -40,7 +40,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 
 /* FONTES */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,500;0,700;1,200&family=Roboto:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,600;0,700;1,100;1,300&family=Ubuntu:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@1,100&family=Ubuntu:wght@300;400;500;700&display=swap');
 
@@ -50,4 +50,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+a{
+  color: white;
+  text-decoration: none;
 }

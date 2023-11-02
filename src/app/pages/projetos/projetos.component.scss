@@ -1,0 +1,63 @@
+.content {
+  background-color: #0f1216;
+  height: calc(100vh - 98px);
+  padding: 15px;
+  margin: 16px;
+  margin-left: 30px;
+  white-space: pre-line;
+  color: lightgray;
+  border-radius: 10px;
+}
+.example-card {
+  max-width: 250px;
+}
+
+.example-header-image {
+  background-image: url("../../../assets/angular.png");
+  background-size: cover;
+}
+mat-card {
+  background-color: #0f1216;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px black;
+  margin-bottom: 20px;
+}
+mat-card-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+mat-card-subtitle {
+  color: rgba(255, 255, 255, 0.438);
+}
+mat-card-content,
+p {
+  color: rgba(255, 255, 255, 0.568);
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 0.7rem;
+  margin-top: 5px;
+  text-align: justify;
+}
+.card-button {
+  border: 1px solid #0c8d50;
+  margin: auto;
+  color: white;
+  width: 100%;
+  font-size: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+.card-button:hover {
+  background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166));
+}
+.card-content{
+  display: flex;
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

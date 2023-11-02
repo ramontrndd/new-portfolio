@@ -9,12 +9,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card'
 import { HomeComponent } from './pages/home/home.component';
 import { ProjetosComponent } from './pages/projetos/projetos.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { TechSkillsComponent } from './pages/tech-skills/tech-skills.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, ProjetosComponent, AboutMeComponent, TechSkillsComponent, ContactComponent, NotFoundComponent],
@@ -27,6 +29,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
