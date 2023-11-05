@@ -3,7 +3,6 @@
   height: calc(100vh - 98px);
   margin: 16px;
   margin-left: 30px;
-  white-space: pre-line;
   font-size: 2rem;
   color: lightgray;
   border-radius: 10px;
@@ -37,6 +36,7 @@
 .home-photo {
   display: flex;
   border-radius: 50%;
+  margin-top: 100px
 }
 .content,
 p {
@@ -51,30 +51,35 @@ a {
   text-decoration: none;
 }
 .home-download-cv {
+  animation: gradient 5s ease-in infinite;
+  background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166))
+    border-box border-box;
+  background-size: 300% 300%;
   text-align: center;
   width: 200px;
-  margin-top: 15px;
   color: white;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   border-radius: 1rem;
-  margin-left: 30px;
-  background: linear-gradient(
-      90deg,
-      rgba(166, 247, 80, 0.04) 0%,
-      rgba(166, 247, 80, 0) 69.95%
-    ),
-    rgb(24, 28, 35);
-  padding: 1rem;
   border: 1px solid #00b759;
-}
-.home-download-cv:hover {
-  background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166))
-    border-box border-box;
-  transition: opacity 3s ease-in-out;
+  padding: 1rem;
+  margin-left: 30px;
+  margin-top: 15px;
   cursor: pointer;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 @keyframes blinkCursor {
   from {
     border-right: 2px solid rgba(255, 255, 255, 0.726);
@@ -92,58 +97,88 @@ a {
   }
 }
 
-@media screen and (max-width: 375px){
-  .home-content{
+@media screen and (max-width: 360px) {
+  .home-content {
     flex-direction: column-reverse;
   }
-  .home-photo{
+  .home-download-cv {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .home-photo {
     width: 250px;
     height: 250px;
   }
-  .home-text{
-    width: 80vw;
+}
+@media screen and (max-width: 375px) {
+  .home-download-cv {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
-
+  .home-text {
+    width: 70vw;
+  }
+  .home-photo {
+    width: 250px;
+    height: 250px;
+  }
 }
 
-@media screen and (max-width: 450px){
-  .home-content{
+@media screen and (max-width: 450px) {
+  .home-content {
     flex-direction: column-reverse;
   }
   .home-text {
     width: 70vw;
   }
-  .home-download-cv{
+  .home-download-cv {
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
   }
+}
+@media screen and (max-width: 768px) {
+  .home-content {
+    flex-direction: column-reverse;
   }
-  @media screen and (max-width: 768px){
-    .home-content{
-      flex-direction: column-reverse;
-    }
-    .home-text {
-      width: 55vw;
-    }
-    .home-download-cv{
-      margin: auto;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
+  .home-text {
+    width: 55vw;
   }
-  @media screen and (max-width: 920px){
-    .home-content{
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: space-around;
-    }
-    .home-text {
-      width: 55vw;
-    }
-    .home-download-cv{
-      margin: auto;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
+  .home-download-cv {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
+}
+@media screen and (max-width: 920px) {
+  .home-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .home-text {
+    width: 55vw;
+  }
+  .home-download-cv {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .home-text {
+    width: 55vw;
+  }
+  .home-download-cv {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
