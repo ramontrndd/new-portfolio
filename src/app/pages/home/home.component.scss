@@ -18,7 +18,7 @@
   margin-top: 15px;
 }
 .home-text {
-  width: 60%;
+  width: 55%;
   font-family: "Ubuntu", sans-serif;
   text-align: justify;
   line-height: 1.5rem;
@@ -92,6 +92,19 @@ a {
   }
 }
 
+@media screen and (max-width: 375px){
+  .home-content{
+    flex-direction: column-reverse;
+  }
+  .home-photo{
+    width: 250px;
+    height: 250px;
+  }
+  .home-text{
+    width: 80vw;
+  }
+
+}
 
 @media screen and (max-width: 450px){
   .home-content{
