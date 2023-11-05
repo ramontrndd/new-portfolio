@@ -1,3 +1,22 @@
 <mat-sidenav-container class="mat-elevation-z8 content">
-  <p>tech-skills works!</p>
+  <div class="container">
+    <div class="tech-title">
+      <h1>Angular</h1>
+    </div>
+    <div class="tech-content">
+      <circle-progress
+        [percent]="progress1"
+        [radius]="90"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="6"
+        [innerStrokeWidth]="10"
+        [outerStrokeColor]="'#00b759'"
+        [innerStrokeColor]="'#78C000'"
+        [animation]="true"
+        [animationDuration]="1000"
+        [showImage]="true"
+        [imageSrc]="imageAngular"
+      ></circle-progress>
+    </div>
+  </div>
 </mat-sidenav-container>
