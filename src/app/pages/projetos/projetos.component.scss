@@ -61,3 +61,8 @@ p {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 280px) and (max-width: 359px) {
+  .card-content {
+    width: 40vw;
+  }
+}

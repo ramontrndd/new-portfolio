@@ -1,6 +1,6 @@
 mat-toolbar {
   background: #0f1216;
-  color: #00B759;
+  color: #00b759;
 }
 mat-toolbar,
 h1 {
@@ -21,7 +21,7 @@ mat-sidenav {
   border-radius: 10px;
   padding: 16px;
   text-align: center;
-  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.349) ;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.349);
 }
 mat-sidenav-container {
   height: calc(100vh - 65px);
@@ -67,7 +67,7 @@ span {
 mat-divider {
   margin-top: 16px;
   margin-bottom: 16px;
-  background-color: #00B759;
+  background-color: #00b759;
 }
 .avatar {
   border-radius: 10px;
@@ -79,6 +79,13 @@ mat-divider {
     font-size: 1.85rem;
   }
 }
-.git{
+.git {
   margin-right: 25px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 359px) {
+  mat-toolbar,
+  h1 {
+    font-size: 1.3rem;
+  }
 }

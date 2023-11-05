@@ -1,6 +1,6 @@
 .content {
   background-color: #0f1216;
-  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.349) ;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.349);
   height: calc(100vh - 98px);
   margin: 16px;
   margin-left: 30px;
@@ -8,20 +8,16 @@
   color: lightgray;
   border-radius: 10px;
 }
-.home-content {
+.home-content{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-.home-content {
-  margin-top: 15px;
+  margin-left: 40px;
 }
 .home-text {
-  width: 55%;
+  width: 45vw;
   font-family: "Ubuntu", sans-serif;
   text-align: justify;
   line-height: 1.5rem;
+  margin-right: 20px;
 }
 .home-text p {
   margin-top: 10px;
@@ -37,7 +33,7 @@
 .home-photo {
   display: flex;
   border-radius: 50%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .content,
 p {
@@ -68,104 +64,86 @@ a {
   margin-top: 15px;
   cursor: pointer;
 }
-
-@media screen and (max-width: 360px) {
-  .home-content {
+@media screen and (min-width: 280px) and (max-width: 359px){
+  .home-content{
+    display: flex;
     flex-direction: column-reverse;
-  }
-  .home-text p {
-    width: 50vw;
-  }
-  .home-download-cv {
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .home-photo {
-    width: 150px;
-    height: 150px;
-    margin-top: 0;
-  }
-  
-}
-@media screen and (max-width: 375px) {
-  .home-download-cv {
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .home-photo {
-    width: 150px;
-    height: 150px;
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .home-content {
-    flex-direction: column-reverse;
-  }
-  .home-download-cv {
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    overflow: hidden;
   }
   .home-photo{
+    width: 150px;
+    height: 150px;
+  }
+  .home-text p {
+    width: 55vw;
+    font-size: 0.7rem;
+  }
+  .home-download-cv{
+    width: 150px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+  }
+  .home-content h2 {
+    font-size: 1rem;
+  }
+
+}
+@media screen and (min-width: 360px) and (max-width: 540px) {
+  .home-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-left: 25px;
+  }
+  .home-photo {
     width: 250px;
     height: 250px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .home-content {
-    flex-direction: column-reverse;
-  }
-  .home-download-cv {
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .home-photo {
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 920px) {
-  .home-content {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
   }
   .home-text p {
-    width: 45vw;
-  }
-  .home-photo {
-    margin-top: 0;
+    width: 75vw;
   }
   .home-download-cv {
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-left: 60px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .home-photo {
-    margin-top: 0;
-  }
-  .home-content {
+
+@media screen and (min-width: 653px) and (max-width: 998px){
+  .home-content{
+    display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    margin-left: 4rem;
+  }
+  .home-text p {
+    width: 55vw;
+  }
+  .home-photo{
+    margin-left: 2.7rem;
+    margin-top: 15px;
+  }
+  .home-download-cv{
+    margin-left: 180px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+}
+@media screen and (min-width: 1980px) and (max-width: 2560px){
+  .home-content{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
   }
   .home-text p {
-    width: 53vw;
-    white-space: pre-line;
-    margin-bottom: 50px;
+    width: 55vw;
   }
-  .home-download-cv {
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .home-download-cv{
+    margin-left: 150px;
   }
 }
+
 @keyframes gradient {
   0% {
     background-position: 0 50%;
