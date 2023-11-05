@@ -14,12 +14,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjetosComponent } from './pages/projetos/projetos.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { TechSkillsComponent } from './pages/tech-skills/tech-skills.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ProjetosComponent, AboutMeComponent, TechSkillsComponent, ContactComponent, NotFoundComponent],
+  declarations: [AppComponent, HomeComponent, ProjetosComponent, AboutMeComponent, TechSkillsComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
