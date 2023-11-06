@@ -38,3 +38,16 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
 }
+
+@media screen and (min-width: 360px) and (max-width: 540px) {
+  .tech-description {
+    position: inherit;
+  }
+  .tech-content{
+    margin: 10px 15px;
+  }
+  .tech-content {
+    width: 230px;
+    height: 285px;
+  }
+}
