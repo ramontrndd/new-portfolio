@@ -1,22 +1,54 @@
 <mat-sidenav-container class="mat-elevation-z8 content">
-  <div class="container">
-    <div class="tech-title">
-      <h1>Angular</h1>
+  <div class="tech-container">
+    <div class="tech-content">
+      <div class="tech-title">
+        <h1>Angular</h1>
+      </div>
+      <div class="tech-progress__bar">
+        <circle-progress
+          [percent]="progress1"
+          [radius]="100"
+          [showTitle]="true"
+          [showUnits]="true"
+          [showSubtitle]="true"
+          [outerStrokeWidth]="10"
+          [innerStrokeWidth]="3"
+          [outerStrokeColor]="'#78C000'"
+          [innerStrokeColor]="'#00b759'"
+          [animation]="true"
+          [animationDuration]="1500"
+          [showImage]="true"
+          [imageSrc]="imageAngular"
+          [renderOnClick]="false"
+          [responsive]="true"
+        ></circle-progress>
+      </div>
+      <div class="tech-description"><p>XP 550/1000</p></div>
     </div>
     <div class="tech-content">
-      <circle-progress
-        [percent]="progress1"
-        [radius]="90"
-        [showSubtitle]="false"
-        [outerStrokeWidth]="6"
-        [innerStrokeWidth]="10"
-        [outerStrokeColor]="'#00b759'"
-        [innerStrokeColor]="'#78C000'"
-        [animation]="true"
-        [animationDuration]="1000"
-        [showImage]="true"
-        [imageSrc]="imageAngular"
-      ></circle-progress>
+      <div class="tech-title">
+        <h1>TypeScript</h1>
+      </div>
+      <div class="tech-progress__bar">
+        <circle-progress
+          [percent]="progress2"
+          [radius]="100"
+          [showTitle]="true"
+          [showUnits]="true"
+          [showSubtitle]="true"
+          [outerStrokeWidth]="10"
+          [innerStrokeWidth]="3"
+          [outerStrokeColor]="'#78C000'"
+          [innerStrokeColor]="'#00b759'"
+          [animation]="true"
+          [animationDuration]="1500"
+          [showImage]="true"
+          [imageSrc]="imageTypescript"
+          [renderOnClick]="false"
+          [responsive]="true"
+        ></circle-progress>
+      </div>
+      <div class="tech-description"><p>XP 550/1000</p></div>
     </div>
   </div>
 </mat-sidenav-container>
