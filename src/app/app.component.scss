@@ -72,20 +72,37 @@ mat-divider {
 .avatar {
   border-radius: 10px;
 }
-
+.contact__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 10vw;
+}
 @media screen and (max-width: 375px) {
   mat-toolbar,
   h1 {
     font-size: 1.85rem;
   }
 }
-.git {
-  margin-right: 25px;
-}
-
 @media screen and (min-width: 280px) and (max-width: 359px) {
   mat-toolbar,
   h1 {
     font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 450px) {
+  .contact__content {
+    width: 35vw;
+  }
+}
+@media screen and (min-width: 728px) and (max-width: 1023px) {
+  .contact__content {
+    width: 17vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+  .contact__content {
+    width: 15vw;
   }
 }

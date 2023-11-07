@@ -40,15 +40,19 @@ p {
   text-align: justify;
 }
 .card-button {
-  border: 1px solid #0c8d50;
-  margin: auto;
+  animation: gradient 3s ease-in infinite;
+  background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166))
+    border-box border-box;
+  background-size: 300% 300%;
+  text-align: center;
+  width: 200px;
   color: white;
-  width: 100%;
-  font-size: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: bold;
-}
-.card-button:hover {
-  background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166));
+  border-radius: .5rem;
+  padding: 1rem;
+  margin: 5px auto;
+  cursor: pointer;
 }
 .card-content{
   display: flex;
@@ -64,5 +68,17 @@ p {
 @media screen and (min-width: 280px) and (max-width: 359px) {
   .card-content {
     width: 40vw;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
   }
 }

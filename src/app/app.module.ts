@@ -16,6 +16,7 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { TechSkillsComponent } from './pages/tech-skills/tech-skills.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
       "imageHeight": 75,
       "imageWidth": 75,
       "showImage": true,
-      "startFromZero": false})
+      "startFromZero": false}),
+      MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent],

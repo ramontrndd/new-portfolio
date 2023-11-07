@@ -37,12 +37,18 @@
   font-size: .7rem;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.tech-title h1 {
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 360px) and (max-width: 540px) {
-  .tech-description {
-    position: inherit;
-  }
   .tech-content{
     margin: 10px 15px;
   }
