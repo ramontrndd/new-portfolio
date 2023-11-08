@@ -48,20 +48,20 @@ mat-icon {
 .mat-button,
 span {
   text-transform: uppercase;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 .name {
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 0;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
 .designation {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   margin-top: 2px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #828282;
 }
 mat-divider {
