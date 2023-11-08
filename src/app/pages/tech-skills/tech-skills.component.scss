@@ -19,13 +19,14 @@
 .tech-content {
   border-radius: 10px;
   border: 3px solid #D3D3D3;
-  width: auto;
-  height: auto;
+  width: 200px;
+  height: 270px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.349);
+  margin-bottom: 15px;
 }
 .tech-title{
   display: flex;
@@ -33,3 +34,16 @@
   align-items: center;
   justify-content: center;
   }
+.tech-title h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 10px;
+
+}
+
+.tech-title p{
+  font-size: .8rem;
+  font-family: 'Ubuntu', sans-serif;
+}
